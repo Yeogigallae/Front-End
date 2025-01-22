@@ -82,3 +82,4 @@ export const VoteMessage = styled.div`
 
   font-family: ${({ theme }) => theme.fontFamily.regular};
 `;
+

@@ -55,3 +55,4 @@ export const SearchButton = styled.button<{ $disabled: boolean }>`
   font-family: ${({ theme }) => theme.fontFamily.medium};
 `;
 
+

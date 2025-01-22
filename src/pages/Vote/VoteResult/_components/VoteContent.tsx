@@ -13,3 +13,4 @@ const VoteContent: React.FC = () => {
 }
 
 export default VoteContent;
+

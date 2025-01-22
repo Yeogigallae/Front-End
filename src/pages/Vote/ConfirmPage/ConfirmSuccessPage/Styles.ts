@@ -11,6 +11,3 @@ export const VoteCardWrapper = styled.div`
   margin: 0.1rem 1.25rem;
 `;
 
-
-
-

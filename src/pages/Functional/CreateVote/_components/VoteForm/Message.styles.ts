@@ -23,3 +23,4 @@ export const MessageInput = styled.textarea`
     border: none; 
   }
 `;
+

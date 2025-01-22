@@ -21,4 +21,3 @@ export const text = styled.div`
   color: #ffffff; 
   font-family: ${({ theme }) => theme.fontFamily.medium};
 `;
-

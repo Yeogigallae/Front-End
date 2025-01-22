@@ -52,4 +52,3 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   font-family: ${({ theme }) => theme.fontFamily.medium};
 `;
-

@@ -11,3 +11,4 @@ export const VoteCardWrapper = styled.div`
   margin: 0.1rem 1.25rem;
   font-family: ${({ theme }) => theme.fontFamily.medium};
 `;
+

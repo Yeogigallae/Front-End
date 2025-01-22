@@ -17,6 +17,7 @@ export const searchPlaceWithZip = async (
     // 장소 데이터에 우편번호 추가
     const placesWithZip = await Promise.all(
       placeData.documents.map((document) => fetchZipForPlace(document))
+      
     );
 
     return placesWithZip;

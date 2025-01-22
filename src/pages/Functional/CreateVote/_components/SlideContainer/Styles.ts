@@ -77,3 +77,4 @@ export const Label = styled.span<{ $active: boolean; $isCreateButton?: boolean }
   text-align: center;
   white-space: nowrap;
 `;
+

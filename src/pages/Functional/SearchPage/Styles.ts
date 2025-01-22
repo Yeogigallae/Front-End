@@ -14,7 +14,7 @@ export const Instructions = styled.div`
   padding: 0 10px;
   margin-bottom: 30px;
   font-family: ${({ theme }) => theme.fontFamily.medium};
-  
+
   ul {
     margin: 10px 0 0 16px;
   }

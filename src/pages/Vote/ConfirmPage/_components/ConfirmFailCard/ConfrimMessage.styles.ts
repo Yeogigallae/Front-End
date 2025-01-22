@@ -17,4 +17,3 @@ export const Content = styled.div`
   line-height: 1.3;
   font-family: ${({ theme }) => theme.fontFamily.bold};
 `;
-

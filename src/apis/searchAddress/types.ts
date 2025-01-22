@@ -54,5 +54,3 @@ export interface KakaoCoordToAddressResponse {
     address?: Pick<KakaoPlaceDocument, 'address_name'>;
   }>;
 }
-
-

@@ -16,7 +16,6 @@ interface CalendarHeaderProps {
   handleDayClick: (date: Date) => void;
 }
 
-
 const CalendarHeader: React.FC<CalendarHeaderProps> = ({
   currentYear,
   currentMonth,

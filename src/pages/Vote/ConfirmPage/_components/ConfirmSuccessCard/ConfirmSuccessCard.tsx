@@ -42,4 +42,3 @@ const ConfirmSuccessCard: React.FC = () => {
 };
 
 export default ConfirmSuccessCard;
-

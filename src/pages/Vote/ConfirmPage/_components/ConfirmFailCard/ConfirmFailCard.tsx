@@ -16,7 +16,6 @@ const ConfirmFailCard: React.FC = () => {
     });
   };
 
-  
   return (
     <>
     <Card>

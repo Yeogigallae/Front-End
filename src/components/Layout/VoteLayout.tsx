@@ -37,3 +37,4 @@ const Typography = styled.div`
   font-weight:500;
   line-height:1.178rem;
 `
+

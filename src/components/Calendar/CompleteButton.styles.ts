@@ -20,4 +20,3 @@ export const Toast = styled.div`
   z-index: 10;
 `;
 
-

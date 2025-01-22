@@ -36,3 +36,4 @@ export const Separator = styled.span`
   margin: 0 0.25rem;
   color: #6e6e6e; 
 `;
+

@@ -26,3 +26,4 @@ export const fetchZipForPlace = async (document: any): Promise<any> => {
     return { ...document, zone_no: null }; // 우편번호 실패 시 null 반환
   }
 };
+

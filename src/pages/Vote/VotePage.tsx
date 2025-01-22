@@ -65,3 +65,4 @@ const VotePage: React.FC = () => {
 
 export default VotePage;
 
+

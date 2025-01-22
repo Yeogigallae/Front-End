@@ -13,3 +13,5 @@ export const Content = styled.div`
   color: #fff;
   font-family: ${({ theme }) => theme.fontFamily.regular};
 `;
+
+

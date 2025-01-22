@@ -109,3 +109,4 @@ export const RotateIcon = styled.div<{ $isRotated: boolean }>`
   transform: ${({ $isRotated }) => ($isRotated ? "rotate(180deg)" : "rotate(0deg)")};
   font-family: ${({ theme }) => theme.fontFamily.medium};
 `;
+

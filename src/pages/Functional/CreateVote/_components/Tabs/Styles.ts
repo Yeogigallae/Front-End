@@ -12,7 +12,6 @@ export const StyledCard = styled(Card)`
   margin-bottom: 1rem; 
 `;
 
-
 export const StyledButton = styled(Button)<{ $isActive: boolean }>`
   flex: 1; 
   background-color: ${({ $isActive }) => ($isActive ? "#222222" : "#252525")};

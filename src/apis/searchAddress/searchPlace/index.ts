@@ -26,3 +26,4 @@ export const searchPlace = async (
     throw error;
   }
 };
+

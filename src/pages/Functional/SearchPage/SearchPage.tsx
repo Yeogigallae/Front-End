@@ -140,3 +140,4 @@ const SearchPage: React.FC<SearchPageProps> = ({ onPlaceSelect }) => {
 
 export default SearchPage;
 
+

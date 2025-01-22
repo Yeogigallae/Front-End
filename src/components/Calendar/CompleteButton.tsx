@@ -49,4 +49,3 @@ const CompleteButton: React.FC<CompleteButtonProps> = ({ startDate, endDate, mod
 };
 
 export default CompleteButton;
-

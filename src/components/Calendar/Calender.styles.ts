@@ -10,4 +10,3 @@ export const StyledCard = styled(Card)`
   transition: transform 0.5s;
 `;
 
-
