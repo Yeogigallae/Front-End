@@ -11,12 +11,8 @@ export default function RecommendCard() {
                 <S.Recommend.RecommendTitle> {"추천 기능"} </S.Recommend.RecommendTitle>
 
                 <S.Recommend.RecommendButtonWrapper>
-                    <S.Recommend.RecommendButton onClick={() => navigate("/vote")}>
-                        {"투표 하기"}
-                    </S.Recommend.RecommendButton>
-                    <S.Recommend.RecommendButton onClick={() => navigate("/course/upcoming")}>
-                        {"예산 정하기"}
-                    </S.Recommend.RecommendButton>
+                    <S.Recommend.RecommendButton onClick={() => navigate("/course/upcoming")}>{"AI가 짜준 코스를 바탕으로 예산 짜러 가기"}</S.Recommend.RecommendButton>
+                    <S.Recommend.RecommendText onClick={() => navigate("/")}>{"예산 안 짜고 홈으로 가기"}</S.Recommend.RecommendText>
                 </S.Recommend.RecommendButtonWrapper>
             </S.Recommend.RecommendContainer>
         </Card>

@@ -8,7 +8,7 @@ export const DEFAULT_Complete = {
             startDate: "2025-01-05",
             endDate: "01-12",
             tripType: "DOMESTIC",
-            imageUrl: "https://example.com/images/4.jpg",
+            imageUrl: "https://newsimg-hams.hankookilbo.com/2022/04/08/88f566f5-72dd-4345-afb7-b283132effac.jpg",
         },
         {
             tripPlanId: 2,
@@ -17,7 +17,7 @@ export const DEFAULT_Complete = {
             startDate: "2025-04-01",
             endDate: "04-05",
             tripType: "DOMESTIC",
-            imageUrl: "https://example.com/images/4.jpg",
+            imageUrl: "https://newsimg-hams.hankookilbo.com/2022/04/08/88f566f5-72dd-4345-afb7-b283132effac.jpg",
         },
     ],
 };
