@@ -12,6 +12,10 @@ export const BudgetInfoCard = styled(Card)`
 export const Title = styled(Card.Title)`
     text-align: center;
     justify-content: space-between;
+
+    > :last-child {
+        justify-content: space-between;
+    }
 `;
 
 export const Text = styled.h1`

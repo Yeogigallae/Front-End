@@ -17,11 +17,21 @@ export default function CoursePlaces({
         ...summary.waypoints,
         summary.destination
     ];
-    
+
     const displayPlaces = (overview && allPlaces.length > 2)
         ? allPlaces.slice(0, 2)
         : allPlaces;
-    
+
+    // 만약 시작, 끝 점이 같을 경우
+    // 즉 코스가 하나일 경우
+    if(allPlaces.length === 2 && allPlaces[0].x == allPlaces[1].x && allPlaces[0].y == allPlaces[1].y){
+        return (
+            <S.CoursePlaces.PlaceWrapper>
+                <PlaceItem place={allPlaces[0]} isLast={true} sectionInfo={null} />
+            </S.CoursePlaces.PlaceWrapper>
+        );
+    }
+
     return (
         <S.CoursePlaces.PlaceWrapper>
             {displayPlaces.map((place, index) => (

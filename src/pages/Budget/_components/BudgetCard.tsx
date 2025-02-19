@@ -17,7 +17,7 @@ export default function BudgetCard() {
 
             <S.Title>
                 <S.Logo src={MoneyBag} alt="MoneyBag Logo" />
-                최소 {budgetPageDataMock.result.price}  
+                {budgetPageDataMock.result.price}  
                 <S.Logo src={MoneyBag} alt="MoneyBag Logo" />
             </S.Title>
 

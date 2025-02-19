@@ -26,7 +26,7 @@ function NoticeLayout() {
                     <HeaderCenterContent title={title} />
                 }
                 rightContent={
-                    <IconButton onClick={() => navigate('/')}>
+                    <IconButton onClick={() => navigate('/',{replace:true})}>
                         <HomeIcon/>
                     </IconButton>
                 }

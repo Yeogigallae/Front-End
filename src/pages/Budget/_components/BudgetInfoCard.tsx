@@ -1,24 +1,23 @@
 import { useState } from "react";
 import * as S from "./Styles";
 import Card from "../../../components/Card";
-import { useGetBudgetInfo } from "../../../react-query/queries/budget/budgetQuery"; 
-import { budgetMock } from "../../../apis/budget/mocks"; 
 import closeBtn from "../../../assets/icons/closeBtn.svg";
 import openBtn from "../../../assets/icons/openBtn.svg";
 import { getBudgetType } from "./getBudgetType";
+import { BudgetDay } from "../../../apis/budget/types";
 
 interface BudgetInfoCardProps {
-    budgetId: number;
+    budgetDay: BudgetDay[] | undefined;
 }
 
-export default function BudgetInfoCard({ budgetId }: BudgetInfoCardProps) {
+export default function BudgetInfoCard({ budgetDay }: BudgetInfoCardProps) {
     const [openDays, setOpenDays] = useState<{ [key: string]: boolean }>({});
-    const { data, isLoading, isError } = useGetBudgetInfo(budgetId);
-    const budgetData = isError ? budgetMock : data;
 
     const toggleDay = (day: string) => {
         setOpenDays((prev) => ({ ...prev, [day]: !prev[day] }));
     };
+
+    if (!budgetDay) return null;
 
     return (
         <S.BudgetInfoCard>
@@ -27,11 +26,8 @@ export default function BudgetInfoCard({ budgetId }: BudgetInfoCardProps) {
                 <br />
                 예산을 만들었어요!
             </Card.Title>
-
-            {isLoading ? (
-                <S.Text>예산 정보를 불러오는 중...</S.Text>
-            ) : (
-                budgetData?.result?.map((dayData) => (
+            {
+                budgetDay?.map((dayData) => (
                     <Card.Item key={dayData.day}>
                         <S.DayHeader onClick={() => toggleDay(dayData.day)}>
                             <S.Day>{dayData.day}</S.Day>
@@ -70,7 +66,7 @@ export default function BudgetInfoCard({ budgetId }: BudgetInfoCardProps) {
                         )}
                     </Card.Item>
                 ))
-            )}
+            }
         </S.BudgetInfoCard>
     );
 }

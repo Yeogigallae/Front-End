@@ -56,7 +56,7 @@ const App: React.FC = () => {
 
                         {/* Budget */}
                         <Route element={<BudgetLayout />}>
-                            <Route path="/budget" element={<BudgetPage />} />
+                            <Route path="/budget/:aiCourseId" element={<BudgetPage />} />
                         </Route>
 
                         {/* MyPage */}

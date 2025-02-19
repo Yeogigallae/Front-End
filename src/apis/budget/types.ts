@@ -16,3 +16,13 @@ export type BudgetResponse = {
   message: string;
   result: BudgetDay[];
 };
+
+export type BudgetIdResponse = {
+  httpStatus: string;
+  code: string;
+  message: string;
+  result: {
+    budgetId: string;
+  }[];
+};
+

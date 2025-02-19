@@ -29,7 +29,7 @@ function VoteLayout() {
                     <HeaderCenterContent title={title} number={number} />
                 }
                 rightContent={
-                    <IconButton onClick={() => navigate("/")}>
+                    <IconButton onClick={() => navigate("/",{replace:true})}>
                         <HomeIcon />
                     </IconButton>
                 }
