@@ -20,7 +20,7 @@ function BudgetLayout() {
                 }
                 centerContent={<HeaderCenterContent title={"예산정하기"} number={budgetPageDataMock.result.userCount} />}
                 rightContent={
-                    <IconButton onClick={() => navigate("/")}>
+                    <IconButton onClick={() => navigate("/",{replace:true})}>
                         <HomeIcon />
                     </IconButton>
                 }
